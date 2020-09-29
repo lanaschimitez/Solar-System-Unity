@@ -12,11 +12,7 @@ public class Mola : MonoBehaviour
 
     public Vector3 posicaoInicial;
     public Vector3 posicaoFinal;
-
-    public GameObject caixa;
     public Rigidbody bodyCaixa;
-
-    public Vector3 nulo;
 
     public Vector3 aceleracao;
 
@@ -34,16 +30,7 @@ public class Mola : MonoBehaviour
         deformação = posicaoFinal - posicaoInicial;
         forca = (-K * deformação) - amortecimento * velocidade; 
         aceleracao = forca / bodyCaixa.mass;
-
         velocidade += (aceleracao * Time.deltaTime);
-        //transform.position = transform.position + forca * Time.deltaTime;
         transform.position = transform.position + velocidade * Time.deltaTime + (aceleracao * (Time.deltaTime * Time.deltaTime)) / 2;
-
-        // modificacao de posicao por forcas externas, forca/massa =  aceleracao
-        // acelaracao = velocidade
-
-        //usar um dos primeiros script
-        //transform.position = transform.position + forca * Time.deltaTime;
-
     }
 }

@@ -285,7 +285,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555803814}
   serializedVersion: 2
-  m_Mass: 4
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -306,15 +306,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forca: {x: 0, y: 0, z: 0}
-  K: 10
+  K: 100
   "deforma\xE7\xE3o": {x: 0, y: 0, z: 0}
   amortecimento: 0
   velocidade: {x: 0, y: 0, z: 0}
   posicaoInicial: {x: 0, y: 0, z: 0}
   posicaoFinal: {x: 0, y: 0, z: 0}
-  caixa: {fileID: 555803814}
   bodyCaixa: {fileID: 555803815}
-  nulo: {x: 0, y: 0, z: 0}
   aceleracao: {x: 0, y: 0, z: 0}
   ativar: 1
 --- !u!65 &555803817
@@ -539,7 +537,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151710817}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -709,7 +707,7 @@ SpringJoint:
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 4.07, y: 3.27, z: 0}
   serializedVersion: 2
-  m_Spring: 10
+  m_Spring: 100
   m_Damper: 0.2
   m_MinDistance: 0
   m_MaxDistance: 0
@@ -728,7 +726,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771879942}
   serializedVersion: 2
-  m_Mass: 4
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
